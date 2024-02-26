@@ -1,0 +1,51 @@
+{
+  "eula": "",
+  "vendor": "Merck",
+  "license": "",
+  "id": "com.sap.mobile.chatgptwidget",
+  "version": "2.0.0",
+  "name": "myGPT SAC Mobile",
+  "newInstancePrefix": "myGPTInSACMobile2",
+  "supportsMobile": true,
+  "description": "A custom widget to integrate myGPT in SAC Analytic mobile application",
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "custom-widget",
+      "url": "https://heenakhilwani25.github.io/heena.github.io/main.js",
+      "integrity": "",
+      "ignoreIntegrity": true
+    }
+  ],
+  "properties": {
+		"width": {
+			"type": "integer",
+			"default": 1
+		},
+		"height": {
+			"type": "integer",
+			"default": 1
+		}
+  },
+  "methods": {
+		"post": {
+			"description": "Wrapper for jQuery post",
+			"parameters": [
+				{
+					"name": "APIKey",
+					"type": "string",
+					"description": ""
+				},
+				
+				{
+					"name": "prompt",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"returnType": "string"
+		}
+  },
+  "events": {
+  }
+}
